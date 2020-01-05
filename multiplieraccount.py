@@ -118,6 +118,11 @@ if no_of_categories >= 3:
     else:
         rate_of_interests = 0.038    
 
+if available_balance > 50000:
+    rate_of_interests = rate_of_interests + 0.005
+    print("New Rate of Interest: ", str(rate_of_interests))
+
+
 interest_earn_afteroneyear = rate_of_interests * available_balance
 amount_after_oneyear = interest_earn_afteroneyear + available_balance
         
